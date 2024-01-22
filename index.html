@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's BD</title>
+    <!-- tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <!-- custom color style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-primary': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <!-- navbar started -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a><span>Home</span></a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold text-black">Hockey<span
+                            class="text-btn-primary">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a><span class="text-btn-primary font-semibold">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap-6">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-ghost btn-circle w-max h-[57px]"><a class="bg-btn-primary text-white">Get
+                            Ticket</a>
+                </div>
+        </nav>
+        <!-- navbar ended -->
+        <!-- banner section started -->
+        <div class="carousel w-full">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="./Images/1.png" class="w-full" />
+               <div class="lg:absolute lg:right-8 lg:bottom-8 sm:mt-24 rounded-2xl bg-black sm:w-[335px] lg:w-[566px] h-[165px] p-8 justify-start">
+                <h3 class="text-2xl  text-white font-extrabold mb-4">Meet all the heroes from the field</h3>
+                <p class="font-medium text-white">Here all of our players data.They all are professional players and also till playing different club.</p>
+               </div>
+                <div class="absolute flex space-x-6 transform -translate-y-1/2 left-5 right-5 top-3/4">
+                    <a href="#slide4" class="btn btn-circle ">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <!-- banner section ended -->
+    </header>
+
+    <main>
+        <!-- professional section started -->
+        
+        <!-- professional section ended -->
+        <section>
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
